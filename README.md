@@ -1,5 +1,7 @@
 # 🎓 Grading System - FICT
 
+**🌐 Live Demo:** [https://konversi-nilai-mahasiswa.streamlit.app/](https://konversi-nilai-mahasiswa.streamlit.app/)
+
 Aplikasi berbasis web sederhana untuk mengonversi dan mengalkulasi nilai akhir mahasiswa (**Non-Board Subjects**). Dibangun menggunakan [Streamlit](https://streamlit.io/) dengan UI yang natural dan tema _Eye-Care_ (lembut di mata).
 
 Aplikasi ini dikonfigurasi berdasarkan skala penilaian **Universitas Horizon Indonesia**.
