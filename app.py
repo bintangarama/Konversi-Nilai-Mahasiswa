@@ -4,7 +4,7 @@ from logic import hitung_nilai_periode, hitung_final_grade, konversi_grade
 
 # Config page
 st.set_page_config(
-    page_title="Grading System - FICT",
+    page_title="Grading System",
     page_icon=":material/school:",
     layout="centered",
     initial_sidebar_state="expanded"

@@ -1,23 +1,19 @@
 def hitung_nilai_periode(cs, pe):
-    """
-    Menghitung nilai per periode.
-    Aturan: Class Standing (CS) 60%, Periodical Exam (PE) 40%
-    """
+    # Menghitung nilai per periode.
+    # Class Standing (CS) 60%, Periodical Exam (PE) 40%
     return (cs * 0.60) + (pe * 0.40)
 
 def hitung_final_grade(p1, p2):
-    """
-    Menghitung Final Grade untuk Non-Board Subjects.
-    Aturan: P1 50%, P2 50%
-    """
+    # Menghitung Final Grade untuk Non-Board Subjects.
+    # P1 50%, P2 50%
+    
     return (p1 * 0.50) + (p2 * 0.50)
 
-def konversi_grade(fg):
-    """
-    Mengkonversi nilai angka ke Grade Huruf, Grade Point, dan Status Kelulusan.
-    Berdasarkan skala Universitas Horizon Indonesia.
-    """
-    # Menggunakan pembulatan 2 angka desimal untuk presisi pengecekan batas
+def konversi_grade(fg):    
+    # Mengkonversi nilai angka ke Grade Huruf, Point, dan Status Kelulusan.
+    # Berdasarkan skala Universitas Horizon Indonesia.
+    
+    # pembulatan 2 angka desimal untuk presisi pengecekan batas
     fg_rounded = round(fg, 2)
 
     if fg_rounded >= 90.00:

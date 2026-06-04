@@ -3,10 +3,8 @@ name: Keep Streamlit App Alive
 on:
   schedule:
     # Menjalankan ping setiap 8 jam sekali
-    # Streamlit Community Cloud biasanya akan menidurkan (sleep) aplikasi jika tidak ada traffic selama 12 jam
     - cron: "0 */8 * * *"
 
-  # Memungkinkan Anda untuk menjalankan script ini secara manual melalui tab "Actions" di GitHub
   workflow_dispatch:
 
 jobs:
@@ -15,5 +13,4 @@ jobs:
     steps:
       - name: Ping URL Streamlit
         # Menggunakan cURL untuk mengakses URL aplikasi.
-        # Output disembunyikan, kita hanya butuh GitHub memanggil URL tersebut agar server Streamlit mendeteksi adanya "traffic/kunjungan".
         run: curl -s -o /dev/null "https://konversi-nilai-mahasiswa.streamlit.app/"
